@@ -51,11 +51,11 @@ func GetSuggestFund(timeRange string) model.ResFundArr {
 			Price:       v.Nav,
 		})
 	}
-	
+
 	return respFund
 }
 
-// Append Go_date AND sort Slice by time.Time
+// Append Go_date AND sort Slice by price Performance
 func sortFund(fundArr model.FundArr) model.FundArr {
 	for i := 0; i < len(fundArr.Data); i++ {
 		// Parse string to time.Time
@@ -66,7 +66,7 @@ func sortFund(fundArr model.FundArr) model.FundArr {
 		fundArr.Data[i].Go_date = tJson
 	}
 
-	// sort Fund by date
+	// sort Fund by price Performance
 	sort.Slice(fundArr.Data, func(i, j int) bool { return fundArr.Data[i].Nav_return > fundArr.Data[j].Nav_return })
 	return fundArr
 }
