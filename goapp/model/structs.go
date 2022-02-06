@@ -19,16 +19,6 @@ type FundData struct {
 	Go_date            time.Time
 }
 
-type FundRes struct {
-	No                 string
-	Mstar_id           string  `json:"mstar_id"`
-	Thailand_fund_code string  `json:"thailand_fund_code"`
-	Nav_return         float64 `json:"nav_return"`
-	Nav                float64 `json:"nav"`
-	Nav_date           string  `json:"nav_date"`
-	Avg_return         float64 `json:"avg_return"`
-}
-
 type ResFundArr struct {
 	Data []ResFundData `json:"data"`
 }
