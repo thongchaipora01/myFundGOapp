@@ -1,0 +1,23 @@
+develop:
+  port: 8040
+  log:
+    pathLogReq: "D:\\var\\log\\reqInfo"
+    pathLogRes: "D:\\var\\log\\resInfo"
+  authen:
+    username: ""
+    apikey: ""
+  cxenseapi:
+    read: ""
+    sacf: ""
+
+staing:
+  port: 8040
+  log:
+    pathLogReq: "/app/suggestfund/log/info"
+    pathLogRes: "/app/suggestfund/logRes/info"
+  authen:
+    username: ""
+    apikey: ""
+  cxenseapi:
+    read: ""
+    sacf: ""
