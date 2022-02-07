@@ -47,8 +47,8 @@
    app ใหม่ และทำ log ไว้เพื่อดูใน 1 วัน app restart กี่ครั้ง
  * อยากปรับปรุง FINNOMENA APIs ที่ใช้ในการพัฒนา ในส่วนไหนให้ดียิ่งขึ้น
 
-   ผมไม่ได้นำใช้ FINNOMENA APIs มาพัฒนา app ครับ แต่จะนำ Json จาก
+   ผมไม่ได้ใช้ FINNOMENA APIs มาพัฒนา app ครับ แต่จะนำ Json จาก
    https://storage.googleapis.com/finno-ex-re-v2-static-staging/recruitment-test/fund-ranking-1Y.json
    มาทำแทน และนำมาเพิ่ม example date เพื่อให้ได้ timeRange ที่จะนำมาทำ test (e.g. 1D, 1W, 1M, 1Y)
-   แต่ผมก็ได้ดู list กองทุนผ่าน web https://www.finnomena.com/fund/filter?page=1 การ response ของ Fundlist api
-   ถือว่าเร็วมากๆ แล้วครับ แต่ถ้าอยากปรับปรุงด้านอื่นๆ ผมก็สามารถช่วยได้ครับ ^^
+   แต่ผมได้ดู list กองทุนผ่าน web https://www.finnomena.com/fund/filter?page=1 แล้ว ผมว่าการ response ของ fundList api
+   สามารถ query มาได้เร็วมากๆ แล้วครับ แต่ถ้าอยากปรับปรุงด้านอื่นๆ ผมก็สามารถช่วยได้ครับ ^^
