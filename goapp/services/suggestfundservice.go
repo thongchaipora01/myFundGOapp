@@ -79,16 +79,23 @@ func splitFundAndChooseRange(sortedFund model.FundArr, timeRange string) (chosen
 	var monthFund model.FundArr
 	var yearFund model.FundArr
 	for i := 0; i < len(sortedFund.Data); i++ {
+		// Truncate time.Now() to 00:00:00
+		tNow := time.Now().Truncate(24 * time.Hour)
+		// Declare Json date to tData
+		tData := sortedFund.Data[i].Go_date
 		// diff time.Now().Sub(tJson)
-		// find diff from Data date and time.Now()
-		diffHours := int(time.Since(sortedFund.Data[i].Go_date).Hours())
-		if diffHours >= 0 && diffHours <= 23 { // 24 hrs = 1 day
+		// find diff from Data date(Go_date) and time.Now()
+		diffHours := int(int(tNow.Sub(tData).Hours()))
+		if diffHours >= 0 && diffHours <= 24 { // 24 hrs = 1 day
 			dayFund.Data = append(dayFund.Data, sortedFund.Data[i])
-		} else if diffHours >= 0 && diffHours <= 167 { // 168 = 1 week
+		}
+		if diffHours >= 0 && diffHours <= 168 { // 168 hrs = 1 week
 			weekFund.Data = append(weekFund.Data, sortedFund.Data[i])
-		} else if diffHours >= 0 && diffHours <= 729 { // 730 = 1 month
+		}
+		if diffHours >= 0 && diffHours <= 730 { // 730 hrs = 1 month
 			monthFund.Data = append(monthFund.Data, sortedFund.Data[i])
-		} else if diffHours >= 0 && diffHours <= 8764 { // 8765 = 1 year
+		}
+		if diffHours >= 0 && diffHours <= 8765 { // 8765 hrs = 1 year
 			yearFund.Data = append(yearFund.Data, sortedFund.Data[i])
 		}
 	}

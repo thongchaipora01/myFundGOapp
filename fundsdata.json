@@ -1,6 +1,54 @@
 {
     "data": [
         {
+            "mstar_id": "F00000ZMXX",
+            "thailand_fund_code": "PRINCIPAL VNEQ-AZ",
+            "nav_return": 64.80117,
+            "nav": 14.154,
+            "nav_date": "2022-01-09T00:00:00.000Z",
+            "avg_return": 63.633823
+        },
+        {
+            "mstar_id": "F00000ZMXZ",
+            "thailand_fund_code": "PRINCIPAL VNEQ-AV",
+            "nav_return": 54.80117,
+            "nav": 14.154,
+            "nav_date": "2022-01-09T00:00:00.000Z",
+            "avg_return": 63.633823
+        },
+        {
+            "mstar_id": "F0000109C0",
+            "thailand_fund_code": "PRINCIPAL VNEQ-I2",
+            "nav_return": 73.79997,
+            "nav": 14.2656,
+            "nav_date": "2022-02-04T00:00:00.000Z",
+            "avg_return": 63.633823
+        },
+        {
+            "mstar_id": "F00000HHFV",
+            "thailand_fund_code": "KT-OIL2",
+            "nav_return": 79.33466,
+            "nav": 3.4868,
+            "nav_date": "2022-02-03T00:00:00.000Z",
+            "avg_return": 65.394614
+        },
+        {
+            "mstar_id": "F0000118A9",
+            "thailand_fund_code": "ASP-VIETRMF2",
+            "nav_return": 76.60484,
+            "nav": 13.7684,
+            "nav_date": "2022-02-06T00:00:00.000Z",
+            "avg_return": 63.633823
+        },
+        {
+            "mstar_id": "F000003ST9",
+            "thailand_fund_code": "KF-OIL2",
+            "nav_return": 73.63517,
+            "nav": 3.7515,
+            "nav_date": "2022-02-07T00:00:00.000Z",
+            "avg_return": 65.394614
+        },
+        {
             "mstar_id": "F00000ZMXD",
             "thailand_fund_code": "PRINCIPAL VNEQ-A",
             "nav_return": 74.80117,
