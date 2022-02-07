@@ -64,6 +64,6 @@ func TestShowFundInfo(t *testing.T) {
 	}
 
 	if ret != false {
-		t.Log("ret:", ret)
+		t.Log("out:", chosenFundInfo, "ret:", ret)
 	}
 }
