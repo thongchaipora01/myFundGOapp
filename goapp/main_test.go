@@ -43,7 +43,7 @@ func TestSortedFundList(t *testing.T) {
 
 func TestSelectedFund(t *testing.T) {
 	// make GUI of sorted Fund by nav_return
-	out, ret, err := dlgs.List("Click for more Infomation", "Select item from list:", []string{"11. PRINCIPAL VNEQ-AZ"})
+	out, ret, err := dlgs.List("Click for more Infomation", "Select item from list:", []string{"1. KT-OIL2", "2. ASP-VIETRMF2", "3. PRINCIPAL VNEQ-A", "4. PRINCIPAL VNEQ-I"})
 	if err != nil {
 		t.Error(err)
 	}
