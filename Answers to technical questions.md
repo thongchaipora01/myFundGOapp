@@ -19,20 +19,21 @@
    }
    ```
    ส่วนตัว feature หลัก หลังบ้านส่วนใหญ่ใช้ built-in library ของ GO และใส่ logic ของผมเข้าไป อย่าง func GetSuggestFund(timeRange string) model.ResFundArr 
-   ก็จะนำ input timeRange จาก User ไปคำนวณและเรียงลำดับหากองทุนที่ดีที่สุดในช่วงเวลาที่ User เลือกไว้
+   ก็จะเป็นตัวรับ input timeRange จาก User และ response กองทุนที่ดีที่สุดมาให้
    
    ```go
    // query Sorted Fund from User's selected timeRange
       fund := serv.GetSuggestFund(rangeSelected)
    ```
-   และก็นำ Json ในรูปแบบของ struct มาเรียงลำดับด้วย func sortFund(fundArr model.FundArr) model.FundArr
+   และใน GetSuggestFund() ก็จะมีอีก 2 function ใหญ่ๆ คือ
+   1. func sortFund(fundArr model.FundArr) model.FundArr นำ Json ในรูปแบบของ struct มาเรียงลำดับ
    
    ```go
    // sort Fund(slice) by Performance
    sortedFund := sortFund(fundArr)
    ```
-   นำ struct ที่ถูกเรียงลำดับแล้ว มาหากองทุนที่ดีที่สุดในช่วงเวลาที่ User เลือกไว้ ด้วย 
-   func splitFundAndChooseRange(sortedFund model.FundArr, timeRange string) (chosenFund model.FundArr)
+   2.  func splitFundAndChooseRange(sortedFund model.FundArr, timeRange string) (chosenFund model.FundArr)
+   นำ struct ที่ถูกเรียงลำดับแล้ว มาหากองทุนที่ดีที่สุดในช่วงเวลาที่ User เลือกไว้ 
    ```go
    // response BEST Fund
    angeFund := splitFundAndChooseRange(sortedFund, timeRange)
