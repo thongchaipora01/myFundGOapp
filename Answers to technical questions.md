@@ -23,7 +23,7 @@
    
    ```go
    // query Sorted Fund from User's selected timeRange
-      fund := serv.GetSuggestFund(rangeSelected)
+   fund := serv.GetSuggestFund(rangeSelected)
    ```
    และใน GetSuggestFund() ก็จะมีอีก 2 function ใหญ่ๆ คือ
    1. func sortFund(fundArr model.FundArr) model.FundArr นำ Json ในรูปแบบของ struct มาเรียงลำดับ
