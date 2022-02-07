@@ -43,11 +43,11 @@
    Ans. performance issue อาจเกิดได้จากหลายกรณี อย่างที่ผมเคยเจอก็จะเป็นเรื่อง memcache ที่มาจาก library GO cache 
    ซึ่งมันจะผูกไว้กับตัว app process บนเครื่อง linux production ซึ่งถ้า memcache เยอะขึ้น มันก็จะทำให้ memory ของเครื่อง
    เยอะขึ้นตาม จนเครื่องไม่สามารถจัดหา memory ให้ application ได้ จึงทำให้ app ตาย ซึ่งผมก็ทำ crontab ไว้เพื่อ start 
-   app ใหม่ และทำ log ของการ start ด้วย crontab ไว้เพื่อดูใน 1 วัน app restart ก็ครั้ง
+   app ใหม่ และทำ log ไว้เพื่อดูใน 1 วัน app restart กี่ครั้ง
  * อยากปรับปรุง FINNOMENA APIs ที่ใช้ในการพัฒนา ในส่วนไหนให้ดียิ่งขึ้น
 
    Ans. ผมไม่ได้นำใช้ FINNOMENA APIs มาพัฒนา app ครับ แต่จะนำ Json จาก
    https://storage.googleapis.com/finno-ex-re-v2-static-staging/recruitment-test/fund-ranking-1Y.json
-   มาทำแทนเพื่อที่จะมาเพิ่ม date ให้ได้ timeRange ที่จะนำมาทำ test (e.g. 1D, 1W, 1M, 1Y)
+   มาทำแทน และนำมาเพิ่ม example date เพื่อให้ได้ timeRange ที่จะนำมาทำ test (e.g. 1D, 1W, 1M, 1Y)
    แต่ผมก็ได้ดู list กองทุนผ่าน web https://www.finnomena.com/fund/filter?page=1 การ response ของ Fundlist api
    ถือว่าเร็วมากๆ แล้วครับ แต่ถ้าอยากปรับปรุงด้านอื่นๆ ผมก็สามารถช่วยได้ครับ ^^
