@@ -47,6 +47,6 @@
 
    Ans. ผมไม่ได้นำใช้ FINNOMENA APIs มาพัฒนา app ครับ แต่จะนำ Json จาก
    https://storage.googleapis.com/finno-ex-re-v2-static-staging/recruitment-test/fund-ranking-1Y.json
-   มาทำแทนเพื่อที่จะมาเพิ่ม date ให้ได้ timeRange ที่จะ test (e.g. 1D, 1W, 1M, 1Y)
+   มาทำแทนเพื่อที่จะมาเพิ่ม date ให้ได้ timeRange ที่จะนำมาทำ test (e.g. 1D, 1W, 1M, 1Y)
    แต่ผมก็ได้ดู list กองทุนผ่าน web https://www.finnomena.com/fund/filter?page=1 การ response ของ Fundlist api
    ถือว่าเร็วมากๆ แล้วครับ แต่ถ้าอยากปรับปรุงด้านอื่นๆ ผมก็สามารถช่วยได้ครับ ^^
